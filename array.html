@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="csss.css">
+    <link rel="stylesheet" href="../project/css/all.css">
+    <style>
+      *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/* ===== HEADER ===== */
+header{
+  min-height:100vh;
+  background:#333;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-top:90px;
+}
+
+/* ===== NAV ===== */
+.nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#222;
+  z-index:100;
+}
+.nav ul{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  list-style:none;
+  padding:15px;
+}
+.nav ul li{
+  margin:5px 10px;
+}
+.nav ul li a{
+  color:white;
+  text-decoration:none;
+}
+#logo{
+  color:white;
+}
+
+/* ===== CARD ===== */
+.card{
+  background:rgba(255,255,255,0.1);
+  width:90%;
+  max-width:320px;
+  margin:30px auto;
+  text-align:center;
+  padding:20px;
+  border-radius:20px;
+  color:white;
+}
+.card img{
+  border-radius:50%;
+}
+.madi a{
+  color:white;
+  margin:5px;
+  display:inline-block;
+}
+
+/* ===== ABOUT ===== */
+.about-us{
+  padding:40px 20px;
+  background:#777;
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+}
+#left-side{
+  flex:1 1 200px;
+  text-align:center;
+}
+#right-side{
+  flex:2 1 300px;
+  color:white;
+}
+#info span{
+  color:yellow;
+  font-weight:bold;
+}
+
+/* ===== SKILLS ===== */
+.skills{
+  padding:40px 20px;
+  background:#666;
+  color:white;
+}
+.skills-skills{
+  width:100%;
+  height:25px;
+  background:#ddd;
+  margin-bottom:15px;
+}
+#skill{
+  height:100%;
+  color:white;
+  padding-left:10px;
+}
+.html{width:98%;background:red;}
+.css3{width:88%;background:blue;}
+.js{width:90%;background:green;}
+
+/* ===== VIDEO ===== */
+.video{
+  padding:40px 20px;
+  background:#eee;
+}
+.img{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:10px;
+  justify-items:center;
+}
+
+/* ===== CONTACT ===== */
+.cont{
+  padding:40px 20px;
+  background:#aaa;
+  text-align:center;
+}
+.cont form{
+  max-width:400px;
+  margin:auto;
+}
+.cont input{
+  width:100%;
+  margin:8px 0;
+  padding:10px;
+}
+
+/* ===== FOOTER ===== */
+.fottor{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  padding:30px 20px;
+  background:#444;
+  color:white;
+}
+.fottor > div{
+  flex:1 1 250px;
+}
+footer{
+  width:100%;
+  text-align:center;
+  margin-top:20px;
+}
+
+/* ===== MEDIA QUERY ===== */
+@media(max-width:768px){
+  .nav ul{
+    flex-direction:column;
+  }
+
+  header{
+    padding-top:140px;
+  }
+
+  .about-us{
+    text-align:center;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li id="logo"><h1>ihsanullah</h1></li>
+                <li><a href="#about-us"id="about">About</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#video">video</a></li>
+                  <li><a href="#video">video</a></li>
+             
+            </ul>
+
+        </div>
+        <div class="card">
+            <img src="../project/Chris Pasto - Lamacchia Realty.png" alt=""width="100px">
+            <h2>IHANULLAH</h2>
+            <p>i am a web dowloper</p>
+            <div class="madi">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            
+        </div>
+       
+    </header>
+  <div class="about-us"id="about-us">
+<h1>About us</h1>
+<div id="left-side">
+<img src="../project/Chris Pasto - Lamacchia Realty.png" alt="" width="200px">
+</div>
+<div id="right-side">
+<p>
+PERSONAL STATEMENT: I am a confident and enthusiastic person with the ability to learn
+and adapt quickly to new challenges and to handle difficult situation. I have an
+organized approach with good communication skills, which enables me to work effectively
+e
+
+</p>
+<div id="info">
+<p> <h2>INTRODUCTION</h2></p>
+<p> <span>Name</span> IHAULLAH IHSAN</p>
+<p> <span>DOB</span> July 3, 2001</p>
+<p> <span>Phone</span> +93764209559</p>
+<p><span> Email</span>  ihsanllah2ih@gmail.com.</p>
+<p><span> Marital</span> Status: Unmarried</p>
+<p> <span>Address</span> Dist, 5th Khoshal Khan,</p>
+</div>
+<div class="m-info">
+    <button><a href="">MOre info</a></button>
+</div>
+</div>
+
+</div>
+<div class="skills"id="skills">
+    <h1>my skills</h1>
+    <p>HTML5</p>
+    <div class="skills-skills">
+        <div id="skill" class="html">98%</div>
+    </div>
+    <p>css3</p>
+    <div class="skills-skills">
+        <div id="skill" class="css3">88%</div>
+    </div>
+
+        <p>javacript</p>
+    <div class="skills-skills">
+        <div id="skill" class="js">90%</div>
+    </div>
+
+    
+</div>
+<div class="video"id="video">
+    <h1>our video</h1>
+<div class="img">
+        <a href="../project/Chris Pasto - Lamacchia Realty.png"><img src="../project/Chris Pasto - Lamacchia Realty.png" alt=""width="200px"></a>
+        <a href="../project/Chris Pasto - Lamacchia Realty.png"><img src="../project/Chris Pasto - Lamacchia Realty.png" alt=""width="200px"></a>
+        <a href="../project/Chris Pasto - Lamacchia Realty.png"><img src="../project/Chris Pasto - Lamacchia Realty.png" alt=""width="200px"></a>
+        <a href="../project/Chris Pasto - Lamacchia Realty.png"><img src="../project/Chris Pasto - Lamacchia Realty.png" alt=""width="200px"></a>
+        <a href="../project/Chris Pasto - Lamacchia Realty.png"><img src="../project/Chris Pasto - Lamacchia Realty.png" alt=""width="200px"></a>
+        <a href="../project/Chris Pasto - Lamacchia Realty.png"><img src="../project/Chris Pasto - Lamacchia Realty.png" alt=""width="200px"></a>
+        <a href="../project/Chris Pasto - Lamacchia Realty.png"><img src="../project/Chris Pasto - Lamacchia Realty.png" alt=""width="200px"></a>
+        <a href="../project/Chris Pasto - Lamacchia Realty.png"><img src="../project/Chris Pasto - Lamacchia Realty.png" alt=""width="200px"></a>
+        <a href="../project/Chris Pasto - Lamacchia Realty.png"><img src="../project/Chris Pasto - Lamacchia Realty.png" alt=""width="200px"></a>
+        <a href="../project/Chris Pasto - Lamacchia Realty.png"><img src="../project/Chris Pasto - Lamacchia Realty.png" alt=""width="200px"></a>
+
+   </div>
+</div>
+<div class="cont">
+    <h1>contac us</h1>
+    <form action="">
+        <input type="text"placeholder="enter your name">
+        <input type="number"placeholder="enter your number">
+        <input type="email"placeholder="enter yor email">
+        <input type="submit">
+    </form>
+</div>
+<div class="fottor">
+<div class="about-uus">
+        <h1>About us</h1>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+</div>
+
+<div class="addres">
+        <h1>addres</h1>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+</div>
+
+<div class="servises">
+        <h1>servises</h1>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+</div>
+<footer>
+    <h1>ihsanllah2ih</h1>
+</footer>
+
+</div>
+</body>
+</html>
